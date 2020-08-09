@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5666cc5a81c76c4abfbc2b73d20d78b, type: 3}
+  m_Name: PowerPC 604e
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2287229313002517692, guid: 2866ac8d684c49d47be50cc318c377d1, type: 3}
+  image: {fileID: 0}
+  title: PowerPC 604e
+  description: "The PowerPC is a Reduced instruction set computer (RISC) instruction
+    set architecture (ISA) created by the 1991 Apple\u2013IBM\u2013Motorola alliance.
+    The second generation was \"pure\" and includes the \"low end\" PowerPC 603 and
+    \"high end\" PowerPC 604. The 603 is notable due to its very low cost and power
+    consumption. Originally intended for personal computers, the architecture is
+    well known for being used by Apple's Power Macintosh, PowerBook, iMac, iBook,
+    and Xserve lines from 1994 until 2006."
