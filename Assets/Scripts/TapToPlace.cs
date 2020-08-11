@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using TMPro;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
 public class TapToPlace : MonoBehaviour
 {
+    [HideInInspector] public bool placed = false;
+
+    [SerializeField] private GameObject pedestalPrefab = null;
+
     private ARRaycastManager manager;
     private List<ARRaycastHit> hits;
-    private bool placed = false;
+    private SetPedestalAndModel latestPedestal;
 
     private readonly Vector2 centreOfScreen = 0.5f * new Vector2(Screen.width, Screen.height);
 
@@ -26,6 +27,7 @@ public class TapToPlace : MonoBehaviour
 
         if (!manager.Raycast(centreOfScreen, hits, TrackableType.Planes))
         {
+            this.transform.position = 100f * Vector3.back;
             return;
         }
 
@@ -36,7 +38,7 @@ public class TapToPlace : MonoBehaviour
 
         if (Input.touches.Length <= 0) return;
         Touch touch = Input.GetTouch(0);
-        if (EventSystem.current.IsPointerOverGameObject(touch.fingerId))
+        if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject(touch.fingerId))
         {
             return;
         }
@@ -47,13 +49,22 @@ public class TapToPlace : MonoBehaviour
 
     }
 
-    public void UI_RecalculatePlacement()
+    public void RecalculatePlacement()
     {
         placed = false;
+        this.GetComponent<Renderer>().enabled = true;
+
+    }
+
+    public SetPedestalAndModel GetLatestPedestal()
+    {
+        return latestPedestal;
     }
 
     private void PlaceObject()
     {
+        latestPedestal = Instantiate(pedestalPrefab, this.transform.position, this.transform.rotation).GetComponent<SetPedestalAndModel>();
         placed = true;
+        this.GetComponent<Renderer>().enabled = false;
     }
 }

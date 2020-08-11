@@ -6,7 +6,8 @@ using UnityEngine;
 public class ProcessorData : ScriptableObject
 {
     public GameObject prefab;
-    public Sprite image;
     public string title;
     public string description;
+    public Texture imageLeft;
+    public Texture imageRight;
 }

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: PowerPC 604e
   m_EditorClassIdentifier: 
   prefab: {fileID: 2287229313002517692, guid: 2866ac8d684c49d47be50cc318c377d1, type: 3}
-  image: {fileID: 0}
   title: PowerPC 604e
   description: "The PowerPC is a Reduced instruction set computer (RISC) instruction
     set architecture (ISA) created by the 1991 Apple\u2013IBM\u2013Motorola alliance.
@@ -22,3 +21,5 @@ MonoBehaviour:
     consumption. Originally intended for personal computers, the architecture is
     well known for being used by Apple's Power Macintosh, PowerBook, iMac, iBook,
     and Xserve lines from 1994 until 2006."
+  imageLeft: {fileID: 2800000, guid: 4b42c48ec5278f248bf50fce7fa9ee45, type: 3}
+  imageRight: {fileID: 2800000, guid: 524269e49ae8e344cb55a93a8ccbc8cb, type: 3}

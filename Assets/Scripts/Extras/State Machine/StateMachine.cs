@@ -7,7 +7,7 @@ public class StateMachine : MonoBehaviour
 
     protected void Start()
     {
-        currentState = initialState;
+        SetState(initialState);
     }
 
     protected void Update()

@@ -1,5 +1,7 @@
 ﻿public abstract class State
 {
+    public string name;
+
     protected StateMachine source = null;
 
     public virtual void OnStateEnter() { }

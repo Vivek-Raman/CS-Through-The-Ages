@@ -15,6 +15,7 @@ public class UIOptions : MonoBehaviour
 
     private void Awake()
     {
+        UI_SetOptionsButtons(false);
         UI_SetInformationPanel(false);
     }
 
@@ -40,6 +41,7 @@ public class UIOptions : MonoBehaviour
     public void UI_SetInformationPanel(bool isUp)
     {
         isInformationPanelUp = isUp;
+        UI_SetOptionsButtons(false);
         if (isInformationPanelUp)
         {
             informationPanel.anchorMin = new Vector2(informationPanel.anchorMin.x, 0.25f);

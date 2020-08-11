@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5666cc5a81c76c4abfbc2b73d20d78b, type: 3}
+  m_Name: Intel 80486
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1487105062101560979, guid: cb2bdc18d6f91b7408278641d8290ed2, type: 3}
+  title: Intel 80x86
+  description: The 80486 was introduced in 1989 and was the first tightly pipelined
+    x86 design as well as the first x86 chip to use more than a million transistors,
+    due to a large on-chip cache and an integrated floating-point unit. It represents
+    a fourth generation of binary compatible CPUs since the original 8086 of 1978.
+    This is the exposed die of an Intel 80486DX2 microprocessor that was launched
+    in April 1989.
+  imageLeft: {fileID: 2800000, guid: ba2f8768533a398409fd8c1e90305570, type: 3}
+  imageRight: {fileID: 2800000, guid: 419e53fd8e3438e4c9e527e4cd5927f6, type: 3}
