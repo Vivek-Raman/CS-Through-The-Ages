@@ -15,6 +15,7 @@ public class SetPedestalAndModel : MonoBehaviour
         frameRight = this.transform.GetChild(2).GetComponent<Renderer>();
     }
 
+    [ContextMenu(nameof(SetModel))]
     public void SetModel(ProcessorData data)
     {
         processorData = data;
